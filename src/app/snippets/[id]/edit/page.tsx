@@ -18,8 +18,8 @@ const SnippetEditPage = async (props: SnippetEditPageProps) => {
   if (!snippet) {
     return notFound();
   }
-  revalidatePath(`snippets/${id}`);
-  revalidatePath(`snippets/${id}/edit`);
+  revalidatePath(`/snippets/${id}`);
+  revalidatePath(`/snippets/${id}/edit`);
   return (
     <div>
       <SnippetEditForm snippet={snippet} />

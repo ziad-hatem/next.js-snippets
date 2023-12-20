@@ -2,6 +2,7 @@ import { db } from "@/db";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import React from "react";
+import Button from "./button";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { docco } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import * as actions from "@/actions";
@@ -34,7 +35,7 @@ const SnippetShowPage = async (props: SnippetShowPage) => {
             Edit
           </Link>
           <form action={deleteSnippetAction}>
-            <button className="p2 border rounded">Delete</button>
+            <Button />
           </form>
         </div>
       </div>
